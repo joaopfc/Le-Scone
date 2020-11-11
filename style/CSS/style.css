@@ -195,3 +195,27 @@ table {
   display: table;
   clear: both;
 }
+
+.row {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+@media screen and (max-width: 760px -1) {
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.row::after, .row::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.div {
+  font-family: 'Aref Ruqaa', serif;
+  font-family: 'PT Mono', monospace;
+}
